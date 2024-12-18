@@ -56,16 +56,7 @@ const App = () => {
     <div className={`app ${getBackgroundClass()}`}>
       <div className="container">
         <div className="weather-info">
-        <div className="city-selector">
-          <select onChange={handleCityChange} value={city}>
-            {cities.map((cityOption) => (
-              <option key={cityOption.name} value={cityOption.name}>
-                {cityOption.name}
-              </option>
-            ))}
-          </select>
-        </div>
-          <h1>{weatherData ? weatherData.name : "Loading...."}</h1>
+          <h1>{weatherData ? weatherData.name : "Loading..."}</h1>
           <p>{weatherData ? weatherData.description : "Loading..."}</p>
           <p>Currently: {weatherData ? displayTemperature(weatherData.temp) : "Loading temperature..."}</p>
           <p>High: {weatherData ? displayTemperature(weatherData.temp_max) : "Loading..."} Low: {weatherData ? displayTemperature(weatherData.temp_min) : "Loading..."}</p>
@@ -74,6 +65,15 @@ const App = () => {
           <button onClick={toggleUnit} className="unit-toggle">
             Switch Units
           </button>
+            <div className="city-selector">
+            <select onChange={handleCityChange} value={city}>
+              {cities.map((cityOption) => (
+                <option key={cityOption.name} value={cityOption.name}>
+                  {cityOption.name}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
       </div>
     </div>
