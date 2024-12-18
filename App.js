@@ -65,7 +65,7 @@ const App = () => {
             ))}
           </select>
         </div>
-          <h1>{weatherData ? weatherData.name : "Loading..."}</h1>
+          <h1>{weatherData ? weatherData.name : "Loading...."}</h1>
           <p>{weatherData ? weatherData.description : "Loading..."}</p>
           <p>Currently: {weatherData ? displayTemperature(weatherData.temp) : "Loading temperature..."}</p>
           <p>High: {weatherData ? displayTemperature(weatherData.temp_max) : "Loading..."} Low: {weatherData ? displayTemperature(weatherData.temp_min) : "Loading..."}</p>
