@@ -24,8 +24,46 @@ body {
   color: #333;
 }
 
+.unit-toggle {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.city-selector {
+  margin-top: 20px;
+}
+
+.city-selector select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
 .sunny {
   background-color: #f7dc6f;
+}
+
+.cloudy {
+  background-color: #d6d9db;
+}
+
+.rainy {
+  background-color: #5dade2;
+}
+
+.snowy {
+  background-color: #aed6f1;
+}
+
+.thunder {
+  background-color: #2a2c2d;
+}
+
+.tornado {
+  background-color: #705D56;
 }
 
 .default {
